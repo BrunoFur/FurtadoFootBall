@@ -1,0 +1,56 @@
+body nav{
+    background-color: aqua;
+}
+
+div div div h5 {
+    background-color: #dfdfdf;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    width: 100%;
+    margin-bottom: 0.5%;
+    text-align: left;
+
+}
+div div div p {
+    background-color: #dfdfdf;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    width: 100%;
+    margin-bottom: 0.5%;
+    text-align: left;
+    
+
+}
+
+div p {
+    color: black;
+    background-color: #dfdfdf;
+    opacity: 75%;
+    background-attachment: fixed;
+    backface-visibility: hidden;
+    background-size: auto;
+
+}
+
+body {
+    font-family: Bebas Neue, sans-serif;
+    color: #1c1c1c;
+    background-color: ghostwhite;
+}
+
+hr{
+    background-color: black;
+}
+
+div div div a img{
+    margin: auto;
+}
+
+div div a h5{
+    background-color: #FFFFFF;
+}
+
+div div a p{
+    background-color: #FFFFFF;
+}
+

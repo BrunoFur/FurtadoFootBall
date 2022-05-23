@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Furtado Football</title>
+</head>
+
+<body>
+    <!-- Barra de navegação/ Parte de cima  -->
+    <nav class="navbar col-12 m-auto position-fixed navbar-dark bg-dark navbar navbar-expand-lg navbar-light bg-light "
+        style=" z-index: 999;">
+        <a class="navbar-brand nav-link" href="#">
+            <img src="imagens/Soccer_icon-icons.com_67819.png" width="30" height="30" class="d-inline-block align-top"
+                alt="">
+            Furtado Football <span class="sr-only">(Página atual)</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse col-12 m-auto" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Partidas
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item"
+                            href="https://www.uol.com.br/esporte/futebol/central-de-jogos/#/23-05-2022">Hoje</a>
+                        <a class="dropdown-item" href="https://www.espn.com.br/futebol/calendario">Esta semana</a>
+                        <a class="dropdown-item" href="#">Este mês</a>
+                        <a class="dropdown-item" href="#">Este ano</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Times
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="https://www.americamineiro.com.br/">América-MG</a>
+                        <a class="dropdown-item" href="https://www.athletico.com.br/">Athletico-PR</a>
+                        <a class="dropdown-item" href="https://atleticogoianiense.com.br/">Atlético-GO</a>
+                        <a class="dropdown-item" href="https://atletico.com.br/">Atlético-MG </a>
+                        <a class="dropdown-item" href="https://www.avai.com.br/novo/">Avaí</a>
+                        <a class="dropdown-item" href="https://www.botafogo.com.br/">Botafogo</a>
+                        <a class="dropdown-item" href="https://cearasc.com/">Ceará</a>
+                        <a class="dropdown-item" href="https://www.corinthians.com.br/">Corinthians</a>
+                        <a class="dropdown-item" href="https://www.coritiba.com.br/Portal">Coritiba</a>
+                        <a class="dropdown-item" href="http://cuiabaesporteclube.com.br/">Cuiabá</a>
+                        <a class="dropdown-item" href="https://www.flamengo.com.br/">Flamengo</a>
+                        <a class="dropdown-item" href="https://www.fluminense.com.br/site/">Fluminense</a>
+                        <a class="dropdown-item" href="https://fortaleza1918.com.br/">Fortaleza</a>
+                        <a class="dropdown-item" href="https://www.goiasec.com.br/">Goiás</a>
+                        <a class="dropdown-item" href="#https://internacional.com.br/">Internacional</a>
+                        <a class="dropdown-item" href="https://www.juventude.com.br/">Juventude</a>
+                        <a class="dropdown-item" href="https://www.palmeiras.com.br/">Palmeiras</a>
+                        <a class="dropdown-item" href="https://www.redbullbragantino.com.br/">Red Bull Bragantino</a>
+                        <a class="dropdown-item" href="https://www.santosfc.com.br/">Santos</a>
+                        <a class="dropdown-item" href="http://www.saopaulofc.net/">São Paulo</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Brasileirão</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Libertadores</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Europa</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Barra de navegação/ Parte de cima  -->
+    <br><br><br>
+
+    <!-- Carrosel de Imagens -->
+
+    <div id="carouselExampleIndicators" class=" carousel slide  transition: transform 2s ease, opacity .5s ease-out "
+        data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner col-12">
+            <div class="carousel-item active">
+                <a
+                    href="https://www.lance.com.br/futebol-internacional/copa-mundo-2022-fifa-sorteia-grupos-das-eliminatorias-europeias.html">
+                    <img class="d-block w-100" src="imagens/copa.jpg" alt="Copa do Mundo 2022" width="30" height="500">
+                </a>
+                <div class="carousel-caption d-none d-md-block" h>
+                    <h5>Copa do Mundo de 2022: Fifa sorteia grupos das Eliminatórias Europeias</h5>
+                    <p>Em evento realizado na sede da Fifa, na Suíça, entidade divide as 55 seleções filiadas à Uefa em
+                        dez grupos.
+                        Eliminatórias Europeias acontecerão entre março e novembro de 2021</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a
+                    href="https://ge.globo.com/futebol/futebol-internacional/futebol-ingles/noticia/2022/05/20/tecnico-do-aston-villa-gerrard-pode-ajudar-liverpool-a-ser-campeao-da-premier-league.ghtml">
+                    <img class="d-block w-100 " src="imagens/gerard.jpg" alt="Premier League" width="30" height="500">
+                </a>
+                <div class="carousel-caption d-none d-md-block" h>
+                    <h5>Técnico do Aston Villa, Gerrard pode ajudar Liverpool a ser campeão da Premier League</h5>
+                    <p>Klopp comenta possível contribuição do ídolo dos Reds e fala sobre saída de Origi do time;
+                        assista!</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a
+                    href="https://ge.globo.com/futebol/times/corinthians/noticia/2022/05/20/corinthians-envia-oficio-a-conmebol-pedindo-punicao-ao-boca-por-racismo.ghtml">
+                    <img class="d-block w-100" src="imagens/pexels-juan-salamanca-61135.jpg" alt="Libertadores"
+                        width="30" height="500">
+                </a>
+                <div class="carousel-caption d-none d-md-block" h>
+                    <h5>Corinthians envia ofício à Conmebol pedindo punição ao Boca por racismo</h5>
+                    <p>Clube também questiona tratamento dado à torcida na Bombonera</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+        </a>
+    </div>
+
+    <!-- Carrosel de Imagens -->
+    <br>
+    <hr>
+
+    <!-- Cards -->
+
+    <div class="card-deck col-12">
+        <div class="card">
+            <a
+                href="https://ge.globo.com/futebol/futebol-internacional/noticia/2022/05/23/guardiola-o-especialista-em-ligas.ghtml">
+                <img class="card-img-top" src="imagens/carrossel-guardiola-city.jpg" alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title">Guardiola, o especialista em ligas</h5>
+                    <p class="card-text">Técnico espanhol chega a 10 conquistas em 13 temporadas de trabalho.
+                        Veja números de destaque nas passagens por Manchester City, Bayern de Munique e Barcelona</p>
+                    <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a
+                href="https://ge.globo.com/futebol/futebol-internacional/futebol-frances/noticia/2022/05/23/neymar-termina-ano-com-menos-gols-desde-que-chegou-a-europa.ghtml">
+                <img class="card-img-top" src="imagens/neymar.webp" alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        Neymar termina ano com menos gols desde que chegou à Europa</h5>
+                    <p class="card-text">Atacante fecha a temporada 2021/22 com 13 gols pelo Paris Saint-Germain. Por
+                        outro lado,
+                        craque brasileiro emenda sequência de 14 partidas sem sofrer nova lesão</p>
+                    <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a
+                href="https://www.espn.com.br/futebol/artigo/_/id/10318927/liverpool-x-real-madrid-final-champions-veja-tudo-que-voce-precisa-saber-sobre-grande-decisao">
+                <img class="card-img-top" src="imagens/champions.webp" alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title">Liverpool x Real Madrid na final da Champions: veja TUDO o que você precisa
+                        saber sobre a grande decisão</h5>
+                    <p class="card-text">Final da Champions 2021/22 será no dia 28 de maio, um sábado, às 16h (de
+                        Brasília)</p>
+                    <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+                </div>
+            </a>
+
+        </div>
+    </div>
+
+    <!-- Cards -->
+
+    <br><br><br>
+
+    <!-- Abas  -->
+
+    <div class="accordion" id="accordionExample">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                        aria-expanded="true" aria-controls="collapseOne">
+                        Tabela do Brasileirão 2022
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                    <table class="table table-sm table-dark">
+                        <thead>
+                            <tr>
+                                <th scope="col">Pos</th>
+                                <th scope="col">Clube</th>
+                                <th scope="col">Pts</th>
+                                <th scope="col">PJ</th>
+                                <th scope="col">V</th>
+                                <th scope="col">E</th>
+                                <th scope="col">D</th>
+                                <th scope="col">GP</th>
+                                <th scope="col">GC</th>
+                                <th scope="col">SG</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="bg-success">
+                                <th scope="row">1</th>
+                                <td><img src="imagens/logo-do-corinthians.png" width="30" height="30"
+                                        class="d-inline-block align-top ">
+                                    Corinthians</td>
+                                <td>13</td>
+                                <td>6</td>
+                                <td>4</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>10</td>
+                                <td>6</td>
+                                <td>4</td>
+                            </tr>
+                            <tr class="bg-success">
+                                <th scope="row">2</th>
+                                <td><img src="imagens/logo-atletico-mineiro-256.png" width="30" height="30"
+                                        class="d-inline-block align-top ">
+                                    Atlético-MG</td>
+                                <td>12</td>
+                                <td>7</td>
+                                <td>3</td>
+                                <td>3</td>
+                                <td>1</td>
+                                <td>11</td>
+                                <td>7</td>
+                                <td>4</td>
+                            </tr>
+                            <tr class="bg-success">
+                                <th scope="row">3</th>
+                                <td><img src="imagens/logo-sao-paulo-256.png" width="30" height="30"
+                                        class="d-inline-block align-top ">
+                                    São Paulo
+                                </td>
+                                <td>11</td>
+                                <td>6</td>
+                                <td>3</td>
+                                <td>2</td>
+                                <td>1</td>
+                                <td>11</td>
+                                <td>7</td>
+                                <td>4</td>
+                            </tr>
+                            <tr class="bg-success">
+                                <th scope="row">4</th>
+                                <td><img src="imagens/logo-botafogo-256.png" width="30" height="30"
+                                        class="d-inline-block align-top ">
+                                    Botafogo</td>
+                                <td>11</td>
+                                <td>6</td>
+                                <td>3</td>
+                                <td>2</td>
+                                <td>1</td>
+                                <td>10</td>
+                                <td>7</td>
+                                <td>3</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">5</th>
+                                <td><img src="imagens/logo-santos-256.png" width="30" height="30"
+                                        class="d-inline-block align-top ">
+                                    Santos
+                                </td>
+                                <td>10</td>
+                                <td>6</td>
+                                <td>3</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>10</td>
+                                <td>5</td>
+                                <td>5</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">6</th>
+                                <td><img src="imagens/logo-coritiba-256.png" width="30" height="30"
+                                        class="d-inline-block align-top ">
+                                    Coritiba
+                                </td>
+                                <td>10</td>
+                                <td>6</td>
+                                <td>3</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>11</td>
+                                <td>8</td>
+                                <td>3</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">7</th>
+                                <td><img src="imagens/logo-avai-256.png" width="30" height="30"
+                                        class="d-inline-block align-top ">
+                                    Avaí
+                                </td>
+                                <td>10</td>
+                                <td>6</td>
+                                <td>3</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>7</td>
+                                <td>8</td>
+                                <td>-1</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">8</th>
+                                <td><img src="imagens/logo-america-mineiro-256.png" width="30" height="30"
+                                        class="d-inline-block align-top ">
+                                    América-MG
+                                </td>
+                                <td>9</td>
+                                <td>6</td>
+                                <td>3</td>
+                                <td>0</td>
+                                <td>3</td>
+                                <td>7</td>
+                                <td>7</td>
+                                <td>0</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">9</th>
+                                <td><img src="imagens/logo-palmeiras-256.png" width="30" height="30"
+                                        class="d-inline-block align-top ">
+                                    Palmeiras
+                                </td>
+                                <td>9</td>
+                                <td>6</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>1</td>
+                                <td>9</td>
+                                <td>5</td>
+                                <td>4</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">10</th>
+                                <td><img src="imagens/logo-red-bull-bragantino-256.png" width="30" height="30"
+                                        class="d-inline-block align-top ">
+                                    Red Bull Bragantino
+                                </td>
+                                <td>9</td>
+                                <td>7</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>2</td>
+                                <td>9</td>
+                                <td>7</td>
+                                <td>2</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">11</th>
+                                <td><img src="imagens/logo-internacional-256.png" width="30" height="30"
+                                        class="d-inline-block align-top ">
+                                    Internacional
+                                </td>
+                                <td>9</td>
+                                <td>6</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>1</td>
+                                <td>6</td>
+                                <td>6</td>
+                                <td>0</td>
+
+                            <tr>
+                                <th scope="row">12</th>
+                                <td><img src="imagens/logo-fluminense-256.png" width="30" height="30"
+                                        class="d-inline-block align-top ">
+                                    Fluminense
+                                </td>
+                                <td>8</td>
+                                <td>6</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>6</td>
+                                <td>6</td>
+                                <td>0</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">13</th>
+                                <td><img src="imagens/logo-goias-novo-256.png" width="30" height="30"
+                                        class="d-inline-block align-top ">
+                                    Goiás
+                                </td>
+                                <td>8</td>
+                                <td>6</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>7</td>
+                                <td>9</td>
+                                <td>-2</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">14</th>
+                                <td><img src="imagens/logo-cuiaba-256.png" width="30" height="30"
+                                        class="d-inline-block align-top ">
+                                    Cuiabá
+                                </td>
+                                <td>7</td>
+                                <td>6</td>
+                                <td>2</td>
+                                <td>1</td>
+                                <td>3</td>
+                                <td>5</td>
+                                <td>8</td>
+                                <td>-3</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">15</th>
+                                <td><img src="imagens/logo-atletico-paranaense-256.png" width="30" height="30"
+                                        class="d-inline-block align-top ">
+                                    Athletico-PR
+                                </td>
+                                <td>6</td>
+                                <td>6</td>
+                                <td>2</td>
+                                <td>0</td>
+                                <td>4</td>
+                                <td>3</td>
+                                <td>8</td>
+                                <td>-5</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">16</th>
+                                <td><img src="imagens/logo-flamengo-256.png" width="30" height="30"
+                                        class="d-inline-block align-top ">
+                                    Flamengo
+                                </td>
+                                <td>6</td>
+                                <td>6</td>
+                                <td>1</td>
+                                <td>3</td>
+                                <td>2</td>
+                                <td>6</td>
+                                <td>6</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">17</th>
+                                <td><img src="imagens/logo-juventude-256.png" width="30" height="30"
+                                        class="d-inline-block align-top ">
+                                    Juventude
+                                </td>
+                                <td>6</td>
+                                <td>6</td>
+                                <td>1</td>
+                                <td>3</td>
+                                <td>2</td>
+                                <td>7</td>
+                                <td>10</td>
+                                <td>-3</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">18</th>
+                                <td><img src="imagens/logo-ceara-256.png" width="30" height="30"
+                                        class="d-inline-block align-top ">
+                                    Ceará SC
+                                </td>
+                                <td>4</td>
+                                <td>5</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>3</td>
+                                <td>6</td>
+                                <td>9</td>
+                                <td>-3</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">19</th>
+                                <td><img src="imagens/logo-atletico-goianiense-com-estrela-256.png" width="30"
+                                        height="30" class="d-inline-block align-top ">
+                                    Atlético-GO
+                                </td>
+                                <td>3</td>
+                                <td>6</td>
+                                <td>0</td>
+                                <td>3</td>
+                                <td>3</td>
+                                <td>3</td>
+                                <td>10</td>
+                                <td>-7</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">20</th>
+                                <td><img src="imagens/logo-fortaleza-256.png" width="30" height="30"
+                                        class="d-inline-block align-top ">
+                                    Fortaleza
+                                </td>
+                                <td>1</td>
+                                <td>5</td>
+                                <td>0</td>
+                                <td>1</td>
+                                <td>4</td>
+                                <td>3</td>
+                                <td>8</td>
+                                <td>-5</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Grupo de itens colapsável #2
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=zpOULjyy-n8&t=1s"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Grupo de itens colapsável #3
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                    wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                    eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                    assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                    sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                    labore sustainable VHS.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Abas  -->
+    <!-- Parte de Baixo | Contato -->
+    <div class="col-11 m-auto">
+        <br>
+        <h2 class="text-center">Contato</h2>
+        <div class="m-auto" style="width: 200px;  margin-right: 2px;" >
+            <a href="https://contate.me/bruno.furtado">
+                <i class="fa-brands fa-whatsapp" style="font-size: 50px; background-color: #FFFFFF;"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/brunofurtadooo">
+                <i class="fa-brands fa-linkedin" style="font-size: 50px; background-color: #FFFFFF;"></i>
+            </a>
+            <a href="https://www.facebook.com/bruno.fidelis935/">
+                <i class="fa-brands fa-facebook" style="font-size: 50px; background-color: #FFFFFF;"></i>
+            </a>
+            <a href="https://www.instagram.com/bruno_fur/">
+                <i class="fa-brands fa-instagram" style="font-size: 50px; background-color: #FFFFFF;"></i>
+            </a>
+        </div>
+    </div>
+    <footer class="page-footer font small blue p-5" style="background-color: black;">
+        <div class="text-center" style="background-color: black; color: #FFFFFF; font-size: 15px;">
+            <a href="https://www.youtube.com/shorts/rxK_uL6WQQQ">© 2022 Copyright: Código Front end </a>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
